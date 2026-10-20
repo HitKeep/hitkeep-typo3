@@ -1,0 +1,12 @@
+config.debug = 1
+page = PAGE
+page.10 = TEXT
+page.10.value = <main>Public fixture</main>
+json = PAGE
+json.typeNum = 99
+json.config.disableAllHeaderCode = 1
+json.config.additionalHeaders.10.header = Content-Type: application/json
+json.10 = TEXT
+json.10.value = {}
+
+json.987654321 < page.987654321

@@ -1,0 +1,68 @@
+{
+  "name": "hitkeep/typo3",
+  "description": "Per-site HitKeep tracker for TYPO3",
+  "type": "typo3-cms-extension",
+  "license": "GPL-2.0-or-later",
+  "require": {
+    "php": "^8.2",
+    "typo3/cms-core": "~14.3.0",
+    "typo3/cms-frontend": "~14.3.0"
+  },
+  "require-dev": {
+    "typo3/testing-framework": "^9.7",
+    "phpunit/phpunit": "^11.5",
+    "phpstan/phpstan": "^2.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "HitKeep\\Typo3\\": "Classes/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "HitKeep\\Typo3\\Tests\\": "Tests/"
+    }
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "hitkeep",
+      "web-dir": "public"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "typo3/class-alias-loader": true,
+      "typo3/cms-composer-installers": true
+    }
+  },
+  "scripts": {
+    "test": "phpunit -c phpunit.xml",
+    "lint": "find Classes Tests -name '*.php' -print0 | xargs -0 -n1 php -l",
+    "analyse": "phpstan analyse Classes --level=5 --no-progress"
+  },
+  "archive": {
+    "exclude": [
+      "/Tests",
+      "/vendor",
+      "/var",
+      "/.git*",
+      "/composer.lock",
+      "/phpunit.xml",
+      "/build",
+      "/tools",
+      "/progress.md",
+      "/public",
+      "/.phpunit.cache"
+    ]
+  },
+  "homepage": "https://hitkeep.com/",
+  "keywords": [
+    "typo3",
+    "analytics",
+    "hitkeep",
+    "self-hosted"
+  ],
+  "support": {
+    "docs": "https://hitkeep.com/guides/tracking/tracker-architecture/"
+  }
+}

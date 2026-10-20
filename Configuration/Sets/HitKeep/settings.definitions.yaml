@@ -1,0 +1,22 @@
+categories:
+  hitkeep:
+    label: HitKeep
+settings:
+  hitkeep.enabled:
+    type: bool
+    default: false
+    category: hitkeep
+    label: Enable HitKeep
+    description: Enable only after deciding whether consent is required before loading the tracker.
+  hitkeep.host:
+    type: string
+    default: ''
+    category: hitkeep
+    label: HitKeep HTTPS base URL
+    description: Existing instance or custom tracking host, optionally including a deployment path. Do not include hk.js.
+  hitkeep.excludePaths:
+    type: stringlist
+    default: []
+    category: hitkeep
+    label: Excluded path prefixes
+    description: Absolute paths, matching the path itself and its children. A slash excludes the entire site.

@@ -1,0 +1,6 @@
+/vendor/
+/var/
+/public/
+/build/
+/.phpunit.cache/
+/progress.md

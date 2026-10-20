@@ -1,0 +1,3 @@
+# USER_INT evaluates eligibility after the cached collector has been restored.
+page.987654321 = USER_INT
+page.987654321.userFunc = HitKeep\Typo3\UserFunc\Tracker->register
