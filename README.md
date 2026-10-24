@@ -2,14 +2,14 @@
 
 A small Composer extension that loads the existing async HitKeep tracker on public HTML pages. Tested with TYPO3 **14.3.9**, PHP **8.4.24**, and SQLite. The dependency range is restricted to 14.3.x; other versions are not qualified. No database tables, credentials, backend reports, or tracker fork.
 
-This is a source implementation candidate, available at [PascaleBeier/hitkeep-typo3](https://github.com/PascaleBeier/hitkeep-typo3). No Packagist or TER release has been published. `hitkeep/typo3` and extension key `hitkeep` remain proposed distribution identities, subject to publisher ownership checks before a package release.
+This is a source implementation candidate, available at [HitKeep/hitkeep-typo3](https://github.com/HitKeep/hitkeep-typo3). No Packagist or TER release has been published. `hitkeep/typo3` and extension key `hitkeep` remain proposed distribution identities, subject to publisher ownership checks before a package release.
 
 ## Install and configure
 
 To install the source candidate in a TYPO3 Composer project, add the GitHub VCS repository and require its development branch:
 
 ```sh
-composer config repositories.hitkeep vcs https://github.com/PascaleBeier/hitkeep-typo3.git
+composer config repositories.hitkeep vcs https://github.com/HitKeep/hitkeep-typo3.git
 composer require hitkeep/typo3:dev-main
 ```
 
@@ -90,4 +90,4 @@ Packagist and TER are **separate publication gates**. Neither has been performed
 
 The extension's README is the initial operator guide. A maintainer must add a focused TYPO3 integration guide to the separately owned HitKeep documentation website before a public package release; no main-application or documentation-site source is changed by this extension repository.
 
-Report reproducible non-sensitive problems in [GitHub issues](https://github.com/PascaleBeier/hitkeep-typo3/issues). For vulnerabilities, use the private reporting route in [SECURITY.md](SECURITY.md).
+Report reproducible non-sensitive problems in [GitHub issues](https://github.com/HitKeep/hitkeep-typo3/issues). For vulnerabilities, use the private reporting route in [SECURITY.md](SECURITY.md).
